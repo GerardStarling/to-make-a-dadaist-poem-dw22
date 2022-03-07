@@ -54,7 +54,9 @@
     <div id="poem"></div>
     <!-- script -->
     <script>
-      const article = `Government officials were warned repeatedly about making misleading claims about job figures before the official statistics watchdog reprimanded Boris Johnson over the matter. Ed Humpherson, the director general of the UK Statistics Authority (UKSA), said there had been “a series of informal discussions” before the regulator took the “unusual” step of issuing public rebukes to No 10 over the same issue twice last month. During more than half a dozen editions of prime minister’s questions since November, Johnson has made the misleading claim that more people are in employment in the UK than before the pandemic began. Yet, although the numbers of workers on payrolls has risen, the number of self-employed people has dropped significantly so that the total number of people in work is down by 600,000. The chair of the UKSA, Sir David Norgrove, wrote to Johnson saying he was making “a selective use of data” and added that “public trust requires a complete statement”.`;
+      const article = `Last April, I ran into a neighbour on the street. This was not a person I knew well, just someone I used to see from my window, walking masked around the neighbourhood during that first locked-down winter of the pandemic. But by spring 2021, the dangers seemed to be subsiding. People in our Massachusetts town were vaccinated and venturing outside unmasked, happy to stop and chat with anyone. It was a beautiful morning; the sunlight remaking the world so that everything looked a bit too bright and clear, as if racked into sudden and unsettling focus. And there was something unsettling about my neighbour, too. We were laughing and swapping lockdown stories, enjoying the in-person, face-to-face communion, when suddenly it struck me that it had been over a year since I’d seen a mouth belonging to someone other than my husband operating at close range.
+
+As mouths go, this one was quite ordinary, and a year earlier, I wouldn’t have given it a second thought. But masking had defamiliarised mouths, turning them into something strange. This mouth was so brazenly red, its lips rubbery and wet. Inside it, I could see teeth, gums, even a tongue, and all these parts were moving. The mouth did not look like it should belong to the man’s face; it was a body part, an orifice too intimate to be on display. I couldn’t stop staring.`;
       const button = document.getElementById("new-poem");
       function shuffleWords(list) {
         return list
@@ -76,7 +78,7 @@
       function assemblePoem(articleWords) {
         let lineText = "";
         for (const [counter, word] of articleWords.entries()) {
-          if ((counter + 1) % 5 == 0) {
+          if ((counter + 3) % 8 == 0) {
             addLine(lineText);
             lineText = "";
           } else {
